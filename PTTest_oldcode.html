@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PolarTech Testing - Pet24 Virtuaalne Klienditugi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Basic styles */
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            text-align: center;
+            background-color: black; /* Changed background to black */
+            color: #fff; /* Changed text color to white */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 0 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            justify-content: space-between;
+            height: 100%;
+        }
+
+        header, .contact-info {
+            background-color: rgba(0,0,0,0.8); /* Changed background to semi-transparent black */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            color: #fff; /* Changed text color to white */
+        }
+
+        h1 {
+            font-weight: 700;
+            font-size: 2.5em;
+            color: #fff; /* Changed text color to white */
+        }
+
+        .gif-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .gif-container img {
+            max-width: 50%; /* Resize the GIF */
+            height: auto;
+        }
+
+        /* Responsive styles for mobile screens */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 10px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .contact-info {
+                padding: 10px;
+            }
+
+            .gif-container img {
+                max-width: 80%; /* Resize the GIF for mobile screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>PolarTech Test - Pet24 Virtuaalne Klienditugi</h1>
+        </header>
+
+        <!-- Contact Information -->
+        <div class="contact-info">
+            <p><strong>Kontakt:</strong></p>
+            <p>PolarTech</p>
+            <p><i class="fas fa-envelope"></i> Email: polartechai@gmail.com</p>
+            <p><i class="fas fa-phone-alt"></i> Telefon: +372 529 4950</p>
+            <p><i class="fas fa-map-marker-alt"></i> Location: Tallinn, Estonia</p>
+        </div>
+
+        <!-- GIF Container -->
+        <div class="gif-container">
+            <img src="https://i.pinimg.com/originals/bc/1c/4e/bc1c4eb282f3f00e950ab1b9945bd41e.gif" alt="GIF">
+        </div>
+      
+        <!-- Placeholder for your chatbot integration -->
+        <script type="text/javascript">
+            (function(d, t) {
+                var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+                v.onload = function() {
+                    window.voiceflow.chat.load({
+                        verify: { projectID: '6538cccb38d845000705306d' },
+                        url: 'https://general-runtime.voiceflow.com',
+                        versionID: 'production'
+                    });
+                }
+                v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+            })(document, 'script');
+        </script>
+    </div>
+</body>
+</html>
